@@ -12,7 +12,7 @@ RUN mkdir -p /scpserver
 RUN steamcmd \
     +login anonymous \
     +force_install_dir /scpserver \
-    +app_update $APPID validate \
+    +app_update $APPID -beta scopophobia validate \
     +quit
 
 FROM mono AS runner
